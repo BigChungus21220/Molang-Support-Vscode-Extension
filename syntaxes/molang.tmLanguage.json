@@ -1,0 +1,15 @@
+{
+    "scopeName": "molang-support.molang",
+    "injectionSelector": "L:comment.line.double-slash",
+    "patterns": [
+      {
+        "include": "#define-keyword"
+      }
+    ],
+    "repository": {
+      "#define-keyword": {
+        "match": "#define",
+        "name": "keyword.define"
+      }
+    }
+  }
