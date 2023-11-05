@@ -1,6 +1,6 @@
 # Molang Support for Vscode README
 
-Provides features for using and editing Minecraft Bedrock Edition molang strings
+Provides features for using and editing Minecraft Bedrock Edition molang strings through Regolith filters
 
 ## Features
  - automatically compiles and inserts molang files into strings in minecraft addons
@@ -11,7 +11,7 @@ Provides features for using and editing Minecraft Bedrock Edition molang strings
 
 ## Requirements
 
-You should probably install Blockception
+Regolith - https://bedrock-oss.github.io/regolith/
 
 ## Known Issues
 
