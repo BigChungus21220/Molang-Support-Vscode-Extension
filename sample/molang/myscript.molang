@@ -1,0 +1,46 @@
+func rotate(inout x, inout y, a){
+    ca = cos(a);
+    sa = sin(a);
+    x = x*ca - y*sa;
+    y = x*sa + y*ca;
+}
+
+func square(x){
+    return x*x;
+}
+
+vec var p = (1,2)
+arr tmp a = [1,2,2,7,5]
+var px = a[3];
+tmp py = 2;
+py = square(py);
+px ++;
+rotate(px,py,45);
+
+
+
+/* compiles to:
+v.p_x_978429 = 1;
+v.p_y_978429 = 2;
+
+t.a_0_0234789 = 1;
+t.a_1_0234789 = 2;
+t.a_2_0234789 = 2;
+t.a_3_0234789 = 7;
+t.a_4_0234789 = 5;
+
+v.px = t.a_3_0234789;
+t.py = 2;
+
+v.x_989832 = t.py;
+v.return_989832 = v.x_989832*v.x_989832;
+t.py = v.return_989832;
+
+t.py = t.py + 1;
+
+v.a_326738 = 45;
+v.ca_326738 = math.cos(v.a_326738);
+v.sa_326738 = math.sin(v.a_326738);
+v.px = v.px*v.ca_326738 - t.py*v.sa_326738;
+t.py = v.px*v.sa_326738 + t.py*v.ca_326738;
+*/

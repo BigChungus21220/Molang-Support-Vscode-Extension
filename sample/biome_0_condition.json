@@ -1,0 +1,17 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "wiki:conditions/biome_0_condition"
+		},
+		"places_feature": "wiki:blocks/red_wool",
+		/*molang
+		#import molang/myscript.molang
+		//you could also have defines and code in here and they would recieve syntax highlighting
+		*/
+		"iterations": "t.biome_idx == 0",
+		"x": 0,
+		"z": 0,
+		"y": 0
+	}
+}
