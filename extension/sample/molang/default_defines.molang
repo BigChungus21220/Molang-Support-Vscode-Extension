@@ -1,55 +1,55 @@
-#define abs(a) as math.abs(a)
-#define ceil(a) as math.ceil(a)
-#define floor(a) as math.floor(a)
-#define trunc(a) as math.trunc(a)
-#define round(a) as math.round(a)
-#define floor(a) as (a - math.fract(a))
+#define abs(A) as math.abs(A)
+#define ceil(A) as math.ceil(A)
+#define floor(A) as math.floor(A)
+#define trunc(A) as math.trunc(A)
+#define round(A) as math.round(A)
+#define floor(A) as (A - math.fract(A))
 
-#define clamp(x,a,b) as math.clamp(x,a,b)
-#define mix(a,b,x) as math.lerp(a,b,x)
-#define lerp(a,b,x) as math.lerp(a,b,x)
-#define smoothstep(a,b,x) as (x <= 0 ? a : x >= 1 ? b : (x)*(x)*(b - a)*(3-2*(x)) + a)
-#define hermite_blend(x) as math.hermite_blend(x)
+#define clamp(X,A,B) as math.clamp(X,A,B)
+#define mix(A,B,X) as math.lerp(A,B,X)
+#define lerp(A,B,X) as math.lerp(A,B,X)
+#define smoothstep(A,B,X) as (X <= 0 ? A : X >= 1 ? B : (X)*(X)*(B - A)*(3-2*(X)) + A)
+#define hermite_blend(X) as math.hermite_blend(X)
 
-#define cos(x) as math.cos(x)
-#define sin(x) as math.sin(x)
-#define tan(x) as math.tan(x)
-#define acos(a) as math.acos(a)
-#define asin(a) as math.asin(a)
-#define atan(a) as math.atan(a)
-#define atan(a,b) as math.atan2(a,b)
-#define atan2(a,b) as math.atan2(a,b)
-#define mod(a,b) as (a - math.abs(b)*math.floor((a)/math.abs(b)))
+#define cos(X) as math.cos(X)
+#define sin(X) as math.sin(X)
+#define tan(X) as math.tan(X)
+#define acos(A) as math.acos(A)
+#define asin(A) as math.asin(A)
+#define atan(A) as math.atan(A)
+#define atan(A,B) as math.atan2(A,B)
+#define atan2(A,B) as math.atan2(A,B)
+#define mod(A,B) as (A - math.abs(B)*math.floor((A)/math.abs(B)))
 
-#define min_angle(x) as math.min_angle(x)
-#define lerprotate(a,b,x) as math.lerprotate(a,b,x)
-#define radians(x) as ((x)*math.pi/180)
-#define degrees(x) as ((x)*180/math.pi)
+#define min_angle(X) as math.min_angle(X)
+#define lerprotate(A,B,X) as math.lerprotate(A,B,X)
+#define radians(X) as ((X)*math.pi/180)
+#define degrees(X) as ((X)*180/math.pi)
 
-#define pow(x,a) as math.pow(x,a)
-#define sqrt(x) as math.sqrt(x)
-#define ln(x) as math.ln(x)
-#define log(x,b) as (math.ln(x)/math.ln(b))
-#define exp(x) as math.exp(x)
+#define pow(X,A) as math.pow(X,A)
+#define sqrt(X) as math.sqrt(X)
+#define ln(X) as math.ln(X)
+#define log(X,B) as (math.ln(X)/math.ln(B))
+#define exp(X) as math.exp(X)
 
-#define die_roll(n,a,b) as math.die_roll(n,a,b)
-#define die_roll_integer(n,a,b) as math.die_roll_integer(n,a,b)
+#define die_roll(N,A,B) as math.die_roll(N,A,B)
+#define die_roll_integer(N,A,B) as math.die_roll_integer(N,A,B)
 #define random() as math.random(0,1)
-#define random(a,b) as math.random(a,b)
-#define random_integer(a,b) as math.random_integer(a,b)
+#define random(A,B) as math.random(A,B)
+#define random_integer(A,B) as math.random_integer(A,B)
 
-#define a += b as a = a + b
-#define a -= b as a = a - b
-#define a *= b as a = a*(b)
-#define a /= b as a = a/(b) 
-#define a ++ as a = a + 1
-#define a -- as a = a - 1
+#define A += B as A = A + B
+#define A -= B as A = A - B
+#define A *= B as A = A*(B)
+#define A /= B as A = A/(B) 
+#define A ++ as A = A + 1
+#define A -- as A = A - 1
 
 //pi
-#define PI as math.pi
+#define _pi as math.pi
 //natural base (e)
-#define EULER as 2.71828183
+#define _euler as 2.71828183
 //2*pi
-#define TAU as 6.28318531
+#define _tau as 6.28318531
 //golden ratio
-#define PHI as 1.61803398
+#define _phi as 1.61803398
