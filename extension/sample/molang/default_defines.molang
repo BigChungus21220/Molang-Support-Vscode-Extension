@@ -6,8 +6,8 @@
 #define floor(a) as (a - math.fract(a))
 
 #define clamp(x,a,b) as math.clamp(x,a,b)
-#define mix(a,b,x) as ((b - a)*(x) + a)
-#define lerp(a,b,x) as ((b - a)*(x) + a)
+#define mix(a,b,x) as math.lerp(a,b,x)
+#define lerp(a,b,x) as math.lerp(a,b,x)
 #define smoothstep(a,b,x) as (x <= 0 ? a : x >= 1 ? b : (x)*(x)*(b - a)*(3-2*(x)) + a)
 #define hermite_blend(x) as math.hermite_blend(x)
 
