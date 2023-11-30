@@ -1,3 +1,8 @@
+#define PI 3.14
+#import ./otherstuff
+#ifndef _MYSCRIPT
+#define _MYSCRIPT
+
 func rotate(inout x, inout y, a){
     ca = cos(a);
     sa = sin(a);
@@ -52,3 +57,5 @@ v.sa_326738 = math.sin(v.a_326738);
 v.px = v.px*v.ca_326738 - t.py*v.sa_326738;
 t.py = v.px*v.sa_326738 + t.py*v.ca_326738;
 */
+
+#endif
